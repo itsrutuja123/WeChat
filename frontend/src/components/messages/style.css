@@ -1,0 +1,65 @@
+/* General Button Styling */
+button {
+    outline: none;
+}
+
+/* Chat Bubble Links Styling */
+.chat-bubble a {
+    color: white;
+    text-decoration: underline;
+}
+
+.chat-bubble a:hover {
+    color: lightblue;
+}
+
+/* Loading Spinner Styling */
+.loading-spinner {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Dropdown Menu Styling */
+.relative .absolute {
+    position: absolute;
+    bottom: 100%; /* Position dropdown above the button */
+    margin-bottom: 8px; /* Add some spacing between button and dropdown */
+    right: 0;
+    z-index: 10;
+    width: 200px; /* Set width of the dropdown menu */
+    background-color: white; /* Dropdown background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the dropdown */
+}
+
+/* Dropdown Menu Item Styling */
+.relative .absolute label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #ddd; /* Add a border between items */
+}
+
+.relative .absolute label:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Last Item Styling */
+.relative .absolute label:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
