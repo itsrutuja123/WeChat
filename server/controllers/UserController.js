@@ -90,7 +90,7 @@ export const deleteUser = async (req, res) => {
 };
 
 // Follow a User
-// changed
+
 export const followUser = async (req, res) => {
   const id = req.params.id;
   const { _id } = req.body;
@@ -117,7 +117,7 @@ export const followUser = async (req, res) => {
 };
 
 // Unfollow a User
-// changed
+
 export const unfollowUser = async (req, res) => {
   const id = req.params.id;
   const { _id } = req.body;
